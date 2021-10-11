@@ -1,0 +1,37 @@
+.cardImg {
+  .cardImg__img {
+    overflow: hidden;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+      transition: all 0.5s;
+    }
+    .cardImg__icon {
+      opacity: 1;
+    }
+  }
+  .cardImg__icon {
+    opacity: 0;
+  }
+
+  .cardImg__heart,
+  .cardImg__play,
+  .cardImg__dot {
+    position: absolute;
+    top: 40%;
+    z-index: 2;
+  }
+  .cardImg__heart {
+    left: 15%;
+  }
+
+  .cardImg__play {
+    left: 50%;
+  }
+
+  .cardImg__dot {
+    left: 75%;
+  }
+}
